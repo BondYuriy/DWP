@@ -1,0 +1,36 @@
+* {
+  transition: 0.5s;
+}
+
+html {
+  font-family: $Museo;
+  font-size: 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.hidden {
+  display: none;
+}
