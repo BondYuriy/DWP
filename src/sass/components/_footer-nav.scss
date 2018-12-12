@@ -1,5 +1,18 @@
 .footer-nav {
-  color: #6f6f6f;
-  font-size: 15px;
-  font-weight: 500;
+  & li {
+    margin-bottom: 8px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    & a {
+      color: $text-color;
+      font-weight: $Regular;
+
+      &:hover {
+        color: $product-text-color;
+      }
+    }
+  }
 }

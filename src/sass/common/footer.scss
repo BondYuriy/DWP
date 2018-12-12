@@ -26,6 +26,7 @@
 .footer-box {
   display: flex;
   justify-content: space-between;
+  color: $footer-color;
 
   & .info {
     flex: 0 0 32%;
@@ -33,13 +34,69 @@
 
   & .contacts {
     flex: 0 0 17%;
+
+    & .h4 {
+      font-size: $font-text;
+    }
+
+    & span {
+      display: block;
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+
+    & .btn {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    & .email-link {
+      color: $text-color;
+      font-weight: $Regular;
+      text-decoration: underline;
+
+      &:hover {
+        color: $product-text-color;
+      }
+    }
   }
 
   & .company {
     flex: 0 0 11%;
+
+    & .h4 {
+      font-size: $font-text;
+    }
   }
 
   & .catalog {
     flex: 0 0 11%;
+
+    & .h4 {
+      font-size: $font-text;
+    }
+  }
+}
+
+.copyright-wrapper {
+  background-color: #313131;
+  padding: 15px 0;
+}
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  font-weight: $Regular;
+  color: $text-color;
+
+  & span a {
+    color: $white-text;
+    margin-left: 10px;
+
+    &:hover {
+      color: $text-color;
+    }
   }
 }

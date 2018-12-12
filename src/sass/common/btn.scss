@@ -7,15 +7,25 @@
   text-align: center;
   line-height: 40px;
   border-radius: 30px;
+  font-size: 14px;
+  font-weight: $Regular;
 }
 
 .btn-green {
   background-color: $green;
   color: $white-text;
-  font-size: 14px;
-  font-weight: $Regular;
 
   &:hover {
     opacity: 0.8;
+  }
+}
+
+.btn-gray {
+  background-color: #414141;
+  color: $white-text;
+
+  &:hover {
+    opacity: 0.8;
+    color: $white-text;
   }
 }

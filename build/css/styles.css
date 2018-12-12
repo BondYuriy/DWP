@@ -1,27 +1,31 @@
 @font-face {
 	font-family: "Museo";
-	src: url("../fonts/MuseoSansCyrl-300.otf") format("opentype");
+	src: url("../fonts/MuseoSansCyrillic-300.eot");
+	src: url("../fonts/MuseoSansCyrillic-300.eot") format("eot"), url("../fonts/MuseoSansCyrillic-300.svg") format("svg"), url("../fonts/MuseoSansCyrillic-300.ttf") format("truetype"), url("../fonts/MuseoSansCyrillic-300.woff") format("woff"), url("../fonts/MuseoSansCyrillic-300.woff2") format("woff2");
 	font-weight: 300;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "Museo";
-	src: url("../fonts/MuseoSansCyrl-500.otf") format("opentype");
+	src: url("../fonts/MuseoSansCyrillic-500.eot");
+	src: url("../fonts/MuseoSansCyrillic-500.eot") format("eot"), url("../fonts/MuseoSansCyrillic-500.svg") format("svg"), url("../fonts/MuseoSansCyrillic-500.ttf") format("truetype"), url("../fonts/MuseoSansCyrillic-500.woff") format("woff"), url("../fonts/MuseoSansCyrillic-500.woff2") format("woff2");
 	font-weight: 500;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "Museo";
-	src: url("../fonts/MuseoSansCyrl-700.otf") format("opentype");
+	src: url("../fonts/MuseoSansCyrillic-700.eot");
+	src: url("../fonts/MuseoSansCyrillic-700.eot") format("eot"), url("../fonts/MuseoSansCyrillic-700.svg") format("svg"), url("../fonts/MuseoSansCyrillic-700.ttf") format("truetype"), url("../fonts/MuseoSansCyrillic-700.woff") format("woff"), url("../fonts/MuseoSansCyrillic-700.woff2") format("woff2");
 	font-weight: 700;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "Museo";
-	src: url("../fonts/MuseoSansCyrl-900.otf") format("opentype");
+	src: url("../fonts/MuseoSansCyrillic-900.eot");
+	src: url("../fonts/MuseoSansCyrillic-900.eot") format("eot"), url("../fonts/MuseoSansCyrillic-900.svg") format("svg"), url("../fonts/MuseoSansCyrillic-900.ttf") format("truetype"), url("../fonts/MuseoSansCyrillic-900.woff") format("woff"), url("../fonts/MuseoSansCyrillic-900.woff2") format("woff2");
 	font-weight: 900;
 	font-style: normal;
 }
@@ -6249,6 +6253,8 @@ a.text-dark:focus {
 
 /*title*/
 
+/*text*/
+
 /*------- margin-top ---------*/
 
 .mt-30 {
@@ -6287,7 +6293,7 @@ a.text-dark:focus {
 	transition: 0.5s;
 }
 
-html {
+body {
 	font-family: "Museo", sans-serif;
 	font-size: 15px;
 }
@@ -6389,10 +6395,21 @@ a:hover {
 	margin-right: 5px;
 }
 
-.footer-nav {
+.footer-nav li {
+	margin-bottom: 8px;
+}
+
+.footer-nav li:last-child {
+	margin-bottom: 0;
+}
+
+.footer-nav li a {
 	color: #6f6f6f;
-	font-size: 15px;
 	font-weight: 500;
+}
+
+.footer-nav li a:hover {
+	color: #c7c7c7;
 }
 
 .btn {
@@ -6404,23 +6421,34 @@ a:hover {
 	text-align: center;
 	line-height: 40px;
 	border-radius: 30px;
+	font-size: 14px;
+	font-weight: 500;
 }
 
 .btn-green {
 	background-color: #13a34d;
 	color: #fff;
-	font-size: 14px;
-	font-weight: 500;
 }
 
 .btn-green:hover {
 	opacity: 0.8;
 }
 
+.btn-gray {
+	background-color: #414141;
+	color: #fff;
+}
+
+.btn-gray:hover {
+	opacity: 0.8;
+	color: #fff;
+}
+
 .header {
 	position: fixed;
 	left: 0;
 	right: 0;
+	z-index: 10000;
 	background: linear-gradient(180deg, rgba(3, 43, 88, 0.76) 0%, rgba(0, 0, 0, 0) 100%);
 }
 
@@ -6458,7 +6486,6 @@ a:hover {
 
 .header-box .navigations .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
 	padding: 43px 20px;
-	font-family: "Museo", sans-serif;
 	color: #fff;
 	font-size: 15px;
 	font-weight: 500;
@@ -6513,6 +6540,7 @@ a:hover {
 .footer-box {
 	display: flex;
 	justify-content: space-between;
+	color: #d8d8d8;
 }
 
 .footer-box .info {
@@ -6523,12 +6551,68 @@ a:hover {
 	flex: 0 0 17%;
 }
 
+.footer-box .contacts .h4 {
+	font-size: 15px;
+}
+
+.footer-box .contacts span {
+	display: block;
+	font-size: 20px;
+	margin-bottom: 8px;
+}
+
+.footer-box .contacts .btn {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.footer-box .contacts .email-link {
+	color: #6f6f6f;
+	font-weight: 500;
+	text-decoration: underline;
+}
+
+.footer-box .contacts .email-link:hover {
+	color: #c7c7c7;
+}
+
 .footer-box .company {
 	flex: 0 0 11%;
 }
 
+.footer-box .company .h4 {
+	font-size: 15px;
+}
+
 .footer-box .catalog {
 	flex: 0 0 11%;
+}
+
+.footer-box .catalog .h4 {
+	font-size: 15px;
+}
+
+.copyright-wrapper {
+	background-color: #313131;
+	padding: 15px 0;
+}
+
+.copyright {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 14px;
+	font-weight: 500;
+	color: #6f6f6f;
+}
+
+.copyright span a {
+	color: #fff;
+	margin-left: 10px;
+}
+
+.copyright span a:hover {
+	color: #6f6f6f;
 }
 
 .home-wrapper {
@@ -6558,8 +6642,7 @@ main {
 
 p {
 	color: white;
-	font-family: "Museo";
-	font-weight: 300;
+	font-weight: 900;
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
