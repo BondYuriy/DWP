@@ -1,0 +1,63 @@
+.owl-carousel {
+  position: relative;
+
+  & .owl-nav {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 210px;
+    bottom: 10px;
+
+    & .owl-prev,
+    .owl-next {
+      width: 27px;
+      height: 19px;
+      color: $white-text;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+
+    & .owl-prev {
+      margin-right: 19px;
+      background-image: url("../img/prev-arrow.svg");
+    }
+
+    & .owl-next {
+      background-image: url("../img/next-arrow.svg");
+    }
+  }
+
+  & .owl-dots {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    & .owl-dot {
+      width: 15px;
+      height: 15px;
+      background: $text-color;
+      border-radius: 50%;
+      margin-bottom: 8px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      & span {
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        color: white;
+      }
+    }
+
+    & .active {
+      background: $white;
+    }
+  }
+}

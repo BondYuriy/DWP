@@ -1,0 +1,59 @@
+.category-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 200px;
+  background-color: $white;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.07);
+  border-radius: 15px;
+  padding: 20px;
+  color: $section-color;
+
+  & .category-card_img {
+    flex: 0 0 40%;
+
+    & img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  & .category-card_info {
+    flex: 0 0 50%;
+
+    & h4 {
+      font-size: $h4;
+      font-weight: $Bold;
+      margin-bottom: 8px;
+    }
+
+    & span {
+      display: block;
+      font-size: 14px;
+      font-weight: $light;
+      margin-bottom: 20px;
+    }
+
+    & .btn {
+      width: 70%;
+      height: 30px;
+      line-height: 30px;
+    }
+  }
+}
+
+.section-header {
+  margin: 75px 0;
+  text-align: center;
+
+  & h2 {
+    font-size: 29px;
+    font-weight: 700;
+  }
+
+  & span {
+    font-size: 22px;
+    font-weight: 400;
+  }
+}

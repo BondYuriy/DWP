@@ -6275,6 +6275,10 @@ a.text-dark:focus {
 	margin-bottom: 70px;
 }
 
+.mb-125 {
+	margin-bottom: 125px;
+}
+
 /*------- margin-left ---------*/
 
 /*------- margin-right ---------*/
@@ -6308,7 +6312,8 @@ p {
 	margin: 0;
 }
 
-ul {
+ul,
+ol {
 	padding: 0;
 	margin: 0;
 	list-style: none;
@@ -6437,6 +6442,290 @@ a:hover {
 	fill: #e4405f;
 }
 
+.owl-carousel {
+	position: relative;
+}
+
+.owl-carousel .owl-nav {
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	left: 210px;
+	bottom: 10px;
+}
+
+.owl-carousel .owl-nav .owl-prev,
+.owl-carousel .owl-nav .owl-next {
+	width: 27px;
+	height: 19px;
+	color: #fff;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.owl-carousel .owl-nav .owl-prev:hover,
+.owl-carousel .owl-nav .owl-next:hover {
+	opacity: 0.7;
+}
+
+.owl-carousel .owl-nav .owl-prev {
+	margin-right: 19px;
+	background-image: url("../img/prev-arrow.svg");
+}
+
+.owl-carousel .owl-nav .owl-next {
+	background-image: url("../img/next-arrow.svg");
+}
+
+.owl-carousel .owl-dots {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.owl-carousel .owl-dots .owl-dot {
+	width: 15px;
+	height: 15px;
+	background: #6f6f6f;
+	border-radius: 50%;
+	margin-bottom: 8px;
+}
+
+.owl-carousel .owl-dots .owl-dot:last-child {
+	margin-bottom: 0;
+}
+
+.owl-carousel .owl-dots .owl-dot span {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	color: white;
+}
+
+.owl-carousel .owl-dots .active {
+	background: #fff;
+}
+
+.category-card {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 200px;
+	background-color: #fff;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.07);
+	border-radius: 15px;
+	padding: 20px;
+	color: #4a4343;
+}
+
+.category-card .category-card_img {
+	flex: 0 0 40%;
+}
+
+.category-card .category-card_img img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.category-card .category-card_info {
+	flex: 0 0 50%;
+}
+
+.category-card .category-card_info h4 {
+	font-size: 18px;
+	font-weight: 900;
+	margin-bottom: 8px;
+}
+
+.category-card .category-card_info span {
+	display: block;
+	font-size: 14px;
+	font-weight: 300;
+	margin-bottom: 20px;
+}
+
+.category-card .category-card_info .btn {
+	width: 70%;
+	height: 30px;
+	line-height: 30px;
+}
+
+.section-header {
+	margin: 75px 0;
+	text-align: center;
+}
+
+.section-header h2 {
+	font-size: 29px;
+	font-weight: 700;
+}
+
+.section-header span {
+	font-size: 22px;
+	font-weight: 400;
+}
+
+.advantage {
+	height: 650px;
+	position: relative;
+}
+
+.advantage .advantage-img-box {
+	width: 20%;
+	border-radius: 50%;
+	position: relative;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.advantage .advantage-img-box .advantage-img {
+	border-radius: 50%;
+	box-shadow: 0 3px 13px rgba(0, 0, 0, 0.08);
+	border: 8px solid #ffffff;
+}
+
+.advantage .advantage-img-box .advantage-img img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+
+.advantage .advantage-img-box .item-positions div {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: #13a34d;
+	position: absolute;
+	z-index: 10;
+}
+
+.advantage .advantage-img-box .item-positions .item-position1 {
+	left: 18px;
+	top: 18px;
+}
+
+.advantage .advantage-img-box .item-positions .item-position2 {
+	left: -17px;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.advantage .advantage-img-box .item-positions .item-position3 {
+	left: 18px;
+	bottom: 18px;
+}
+
+.advantage .advantage-img-box .item-positions .item-position4 {
+	right: 18px;
+	top: 18px;
+}
+
+.advantage .advantage-img-box .item-positions .item-position5 {
+	right: -17px;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.advantage .advantage-img-box .item-positions .item-position6 {
+	right: 18px;
+	bottom: 18px;
+}
+
+.advantage .advantage-list {
+	color: #6f6f6f;
+}
+
+.advantage .advantage-list ol {
+	counter-reset: li;
+}
+
+.advantage .advantage-list ol li {
+	width: 28%;
+	position: relative;
+	position: absolute;
+}
+
+.advantage .advantage-list ol li::before {
+	display: inline-block;
+	content: counter(li);
+	counter-increment: li;
+	width: 65px;
+	height: 65px;
+	border-radius: 50%;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.09);
+	background-color: #ffffff;
+	color: #13a34d;
+	font-size: 32px;
+	font-weight: 900;
+	text-align: center;
+	line-height: 65px;
+	position: absolute;
+	left: -90px;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.advantage .advantage-list ol li h3 {
+	font-size: 21px;
+	font-weight: 700;
+	color: #5a5a5a;
+	margin-bottom: 7px;
+}
+
+.advantage .advantage-list ol li p {
+	margin-bottom: 10px;
+}
+
+.advantage .advantage-list ol li a {
+	font-size: 13px;
+	font-weight: 500;
+	color: #13a34d;
+}
+
+.advantage .advantage-list ol .advantage-item1 {
+	left: 180px;
+	top: 0;
+}
+
+.advantage .advantage-list ol .advantage-item2 {
+	left: 90px;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.advantage .advantage-list ol .advantage-item3 {
+	left: 180px;
+	bottom: 0;
+}
+
+.advantage .advantage-list ol .advantage-item4 {
+	right: 90px;
+	top: 0;
+}
+
+.advantage .advantage-list ol .advantage-item5 {
+	right: 0;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.advantage .advantage-list ol .advantage-item6 {
+	right: 90px;
+	bottom: 0;
+}
+
 .btn {
 	padding: 0;
 	border: 0;
@@ -6457,6 +6746,7 @@ a:hover {
 
 .btn-green:hover {
 	opacity: 0.8;
+	color: #fff;
 }
 
 .btn-gray {
@@ -6756,14 +7046,27 @@ a:hover {
 }
 
 main {
-	width: 100%;
-	height: 1000px;
+	min-height: 1000px;
 	padding-top: 300px;
 }
 
-p {
-	color: white;
-	font-weight: 900;
+.home-carousel {
+	color: #fff;
+}
+
+.home-carousel .owl-carousel .item h2 {
+	font-size: 28px;
+	font-weight: 300;
+}
+
+.home-carousel .owl-carousel .item span {
+	display: block;
+	font-size: 60px;
+	font-weight: 700;
+}
+
+.home-carousel .owl-carousel .item .btn {
+	width: 180px;
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
