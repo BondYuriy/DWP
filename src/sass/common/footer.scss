@@ -30,6 +30,83 @@
 
   & .info {
     flex: 0 0 32%;
+
+    & .logo {
+      margin-bottom: 24px;
+    }
+
+    & .info-box {
+      display: flex;
+      justify-content: space-between;
+
+      & .social {
+        flex: 0 0 32px;
+      }
+
+      & .address {
+        flex: 0 0 85%;
+        border-radius: 15px;
+        position: relative;
+
+        &::before {
+          display: block;
+          content: "";
+          border-radius: 15px;
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          background: rgba(50, 50, 50, 0.88);
+        }
+
+        & .address-img {
+          width: 100%;
+          height: 100%;
+          border-radius: 15px;
+
+          & img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            border-radius: 15px;
+          }
+        }
+
+        & .address-info {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+
+          &::before {
+            display: inline-block;
+            content: "";
+            width: 23px;
+            height: 32px;
+            background-image: url("../img/marker.svg");
+            position: absolute;
+            left: -40px;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+
+          & span {
+            display: block;
+          }
+
+          & a {
+            color: $text-color;
+            text-decoration: underline;
+            font-size: 13px;
+
+            &:hover {
+              color: $product-text-color;
+            }
+          }
+        }
+      }
+    }
   }
 
   & .contacts {

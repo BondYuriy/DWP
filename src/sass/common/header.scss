@@ -64,6 +64,22 @@
       border-radius: 50%;
       background-color: $green;
       box-shadow: 0 2px 3px rgba(19, 163, 77, 0.67);
+      position: relative;
+
+      &::before {
+        display: inline-block;
+        content: "";
+        width: 20px;
+        height: 20px;
+        background-image: url("../img/man-user.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
 
       &:hover {
         opacity: 0.8;
