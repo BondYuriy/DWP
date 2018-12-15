@@ -6553,21 +6553,6 @@ a:hover {
 	line-height: 30px;
 }
 
-.section-header {
-	margin: 75px 0;
-	text-align: center;
-}
-
-.section-header h2 {
-	font-size: 29px;
-	font-weight: 700;
-}
-
-.section-header span {
-	font-size: 22px;
-	font-weight: 400;
-}
-
 .advantage {
 	height: 650px;
 	position: relative;
@@ -6865,6 +6850,65 @@ a:hover {
 
 .work-section_item:hover .work-section_info .btn {
 	display: inline-block;
+}
+
+.section-header_container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.section-header_container .section-line {
+	flex: 1 1 auto;
+	height: 2px;
+	background-color: #13a34d;
+	position: relative;
+}
+
+.section-header_container .section-line::before {
+	display: block;
+	content: "";
+	width: 9px;
+	height: 9px;
+	background-color: #13a34d;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.section-header_container .section-header {
+	flex: 0 0 500px;
+	margin: 75px 0;
+	text-align: center;
+}
+
+.section-header_container .section-header h2 {
+	flex: 100%;
+	font-size: 29px;
+	font-weight: 700;
+}
+
+.section-header_container .section-header span {
+	font-size: 22px;
+	font-weight: 400;
+}
+
+.section-header_container .section-none {
+	flex: 1 1 auto;
+}
+
+.line-left .section-line::before {
+	right: 0;
+}
+
+.line-right {
+	flex-direction: row-reverse;
+}
+
+.line-right .section-line::before {
+	left: 0;
 }
 
 .btn {

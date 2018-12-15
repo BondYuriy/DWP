@@ -1,0 +1,57 @@
+.section-header_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & .section-line {
+    flex: 1 1 auto;
+    height: 2px;
+    background-color: $green;
+    position: relative;
+
+    &::before {
+      display: block;
+      content: "";
+      width: 9px;
+      height: 9px;
+      background-color: #13a34d;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  & .section-header {
+    flex: 0 0 500px;
+    margin: 75px 0;
+    text-align: center;
+
+    & h2 {
+      flex: 100%;
+      font-size: 29px;
+      font-weight: 700;
+    }
+
+    & span {
+      font-size: 22px;
+      font-weight: 400;
+    }
+  }
+
+  & .section-none {
+    flex: 1 1 auto;
+  }
+}
+
+.line-left .section-line::before {
+  right: 0;
+}
+
+.line-right {
+  flex-direction: row-reverse;
+
+  & .section-line::before {
+    left: 0;
+  }
+}
