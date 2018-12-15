@@ -1,4 +1,4 @@
-.header {
+.header-home {
   position: fixed;
   left: 0;
   right: 0;
@@ -8,6 +8,26 @@
     rgba(3, 43, 88, 0.76) 0%,
     rgba(0, 0, 0, 0) 100%
   );
+}
+
+.header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+  box-shadow: 0 0 11px rgba(38, 38, 38, 0.2);
+  background-color: #ffffff;
+
+  &
+    .header-box
+    .navigations
+    .navbar
+    .navbar-collapse
+    .navbar-nav
+    .nav-item
+    .nav-link {
+    color: #403f3f;
+  }
 }
 
 .header-box {
@@ -43,7 +63,7 @@
             padding: 43px 20px;
             color: $white-text;
             font-size: 15px;
-            font-weight: $Regular;
+            font-weight: $Medium;
             text-transform: capitalize;
           }
 
