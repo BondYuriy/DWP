@@ -6860,7 +6860,7 @@ a:hover {
 
 .section-header_container .section-line {
 	flex: 1 1 auto;
-	height: 2px;
+	height: 1px;
 	background-color: #13a34d;
 	position: relative;
 }
