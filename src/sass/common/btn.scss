@@ -30,3 +30,13 @@
     color: $white-text;
   }
 }
+
+.btn-light-gray {
+  background-color: #767676;
+  color: $white-text;
+
+  &:hover {
+    opacity: 0.8;
+    color: $white-text;
+  }
+}

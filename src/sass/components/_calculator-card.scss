@@ -1,0 +1,52 @@
+.calculator-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 190px; //------------------------------
+  background-color: $white;
+  border-radius: 15px;
+  border: 3px solid #f6f7f9;
+  padding: 20px 18px;
+
+  & .calculator-card_img {
+    flex: 0 0 33%;
+    border-radius: 50%;
+
+    & img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 50%;
+    }
+  }
+
+  & .calculator-card_info {
+    flex: 0 0 59%;
+
+    & h5 {
+      color: $product-title-color;
+      font-size: 15px;
+      font-weight: $Regular;
+      margin-bottom: 16px;
+    }
+
+    & p {
+      color: $product-text-color;
+      font-size: 11px;
+      font-weight: $Regular;
+    }
+
+    & span {
+      display: block;
+      color: $green;
+      font-size: 15px;
+      font-weight: $Medium;
+      margin-bottom: 15px;
+    }
+
+    & .btn {
+      height: 35px;
+      line-height: 35px;
+    }
+  }
+}
