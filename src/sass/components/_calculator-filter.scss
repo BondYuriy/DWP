@@ -42,6 +42,7 @@
           margin-top: 14px;
           font-size: 14px;
           color: $product-title-color;
+          border: 1px solid rgba(0, 0, 0, 0);
 
           &::placeholder {
             color: $product-text-color;

@@ -35,7 +35,7 @@
 
     & span {
       font-size: 22px;
-      font-weight: 400;
+      font-weight: 500;
     }
   }
 
@@ -53,5 +53,15 @@
 
   & .section-line::before {
     left: 0;
+  }
+}
+
+.category-header .section-header h2 {
+  font-weight: 700;
+
+  & span {
+    font-weight: 900;
+    font-size: 29px;
+    margin-left: 10px;
   }
 }

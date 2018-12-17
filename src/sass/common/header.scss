@@ -177,3 +177,30 @@
     }
   }
 }
+
+body.sticky-header {
+  .header {
+    background-color: rgba(255, 255, 255, 0.8);
+    height: 60px;
+  }
+
+  .header,
+  .header-home {
+    height: 70px;
+
+    &
+      .header-box
+      .navigations
+      .navbar
+      .navbar-collapse
+      .navbar-nav
+      .nav-item
+      .nav-link {
+      padding: 16px 20px;
+    }
+
+    & .header-box .logo img {
+      width: 80%;
+    }
+  }
+}

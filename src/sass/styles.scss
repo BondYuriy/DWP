@@ -5,6 +5,7 @@
 @import "indents";
 @import "common/basic";
 @import "components/subscription";
+@import "common/btn";
 @import "components/footer-nav";
 @import "components/social";
 @import "components/home-carousel";
@@ -17,9 +18,11 @@
 @import "components/calculator-filter";
 @import "components/product-banner";
 @import "components/calculator-form";
-@import "common/btn";
+@import "components/product-card";
+@import "components/pagination";
 @import "common/header";
 @import "common/footer";
 @import "pages/home.scss";
 @import "pages/calculator.scss";
 @import "pages/calculator-finish.scss";
+@import "pages/category.scss";

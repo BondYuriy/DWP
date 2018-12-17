@@ -32,6 +32,7 @@
           background-color: #f6f7f9;
           padding: 0 20px;
           color: $product-title-color;
+          border: 1px solid rgba(0, 0, 0, 0);
 
           &::placeholder {
             color: $product-text-color;
