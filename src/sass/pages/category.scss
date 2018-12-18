@@ -5,6 +5,51 @@
   & .category-filter {
     flex: 0 0 23%;
 
+    & .input-box {
+      border-radius: 15px;
+      background-color: $white;
+      padding: 17px 10px 40px 35px;
+      margin-bottom: 60px;
+
+      & .price,
+      .size,
+      .coating,
+      .color {
+        & .input-title {
+          display: block;
+          width: 87%;
+          height: 30px;
+          border-radius: 30px;
+          background-color: #f6f7f9;
+          margin: 0 auto 29px 0;
+          color: $product-title-color;
+          font-size: 14px;
+          font-weight: $Regular;
+          line-height: 30px;
+          text-align: center;
+        }
+
+        & .input-lihk {
+          display: inline-block;
+          color: $product-title-color;
+          font-size: 14px;
+          font-weight: $Regular;
+          text-decoration: underline;
+          margin-top: 20px;
+
+          &:hover {
+            color: $nav-color;
+          }
+        }
+      }
+
+      & .price,
+      .size,
+      .coating {
+        margin-bottom: 35px;
+      }
+    }
+
     & .advantage-block {
       color: $title-color;
       font-size: 13px;
@@ -85,3 +130,13 @@
     }
   }
 }
+
+// @media (min-width: 1200px) {
+//   .product {
+//     position: relative;
+
+//     & .product-card {
+//       position: absolute;
+//     }
+//   }
+// }

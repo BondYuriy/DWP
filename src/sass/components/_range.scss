@@ -1,0 +1,29 @@
+.price {
+  & .price-filter {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+
+    & div {
+      flex: 0 0 35%;
+      height: 24px;
+      border-radius: 15px;
+      border: 1px solid #f6f7f9;
+      padding: 0 10px;
+      color: $product-title-color;
+      font-size: 11px;
+      font-weight: $Bold;
+      line-height: 24px;
+    }
+
+    & .price-line {
+      display: block;
+      flex: 0 0 11px;
+      height: 1px;
+      border: 1px solid #f6f7f9;
+      margin: 0 10px;
+    }
+  }
+}
+
+//===========================
