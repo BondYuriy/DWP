@@ -6459,6 +6459,28 @@ a:hover {
 	color: #fff;
 }
 
+.calculator-link {
+	color: #c7c7c7;
+	font-size: 13px;
+	font-weight: 500;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.calculator-link::before {
+	display: block;
+	content: "";
+	width: 17px;
+	height: 17px;
+	background-image: url("../img/calculate.svg");
+	margin-right: 5px;
+}
+
+.calculator-link:hover {
+	color: #767676;
+}
+
 .footer-nav li {
 	margin-bottom: 8px;
 }
@@ -6915,6 +6937,7 @@ a:hover {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	color: #4a4343;
 }
 
 .section-header_container .section-line {
@@ -7631,28 +7654,6 @@ a:hover {
 	height: 35px;
 	line-height: 35px;
 	margin-bottom: 16px;
-}
-
-.product-card .calculator-link {
-	color: #c7c7c7;
-	font-size: 13px;
-	font-weight: 500;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.product-card .calculator-link::before {
-	display: block;
-	content: "";
-	width: 17px;
-	height: 17px;
-	background-image: url("../img/calculate.svg");
-	margin-right: 5px;
-}
-
-.product-card .calculator-link:hover {
-	color: #767676;
 }
 
 .pagination {
@@ -8569,6 +8570,252 @@ body.sticky-header .header-home .header-box .logo img {
 }
 
 .category-box .category-product .btn-green_light:hover {
+	background-color: #13a34d;
+	color: #fff;
+}
+
+.product-wrapper {
+	height: 380px;
+	background-color: #fff;
+	background-image: url("../img/LUF_6461.jpg");
+	position: relative;
+}
+
+.product-wrapper::before {
+	display: block;
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-image: linear-gradient(180deg, rgba(38, 38, 38, 0) 0%, rgba(38, 38, 38, 0.01) 0%, rgba(38, 38, 38, 0.02) 0%, #000000 100%);
+	opacity: 0.55;
+}
+
+.product-description {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 230px;
+	margin-bottom: 49px;
+}
+
+.product-description .product-img_box {
+	flex: 0 0 21%;
+	color: #13a34d;
+	font-weight: 500;
+	font-size: 40px;
+	text-align: center;
+}
+
+.product-description .product-img_box .product-img {
+	margin-bottom: 28px;
+}
+
+.product-description .product-img_box .product-img img {
+	display: block;
+	width: 100%;
+	height: auto;
+	border-radius: 50%;
+	box-shadow: 0 -6px 12px rgba(0, 0, 0, 0.49);
+	border: 10px solid #ffffff;
+}
+
+.product-description .product-img_box p span {
+	font-weight: 900;
+	margin: 0 3px;
+}
+
+.product-description .product-info {
+	flex: 0 0 75%;
+	padding-top: 88px;
+	color: #767676;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.product-description .product-info .product-info_title {
+	color: #fff;
+	font-size: 24px;
+	font-weight: 500;
+	margin-bottom: 60px;
+}
+
+.product-description .product-info a {
+	display: inline-block;
+	color: #13a34d;
+	font-size: 13px;
+	font-weight: 500;
+	margin-top: 30px;
+}
+
+.product-options {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.product-options .product-size {
+	flex: 0 0 62%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.product-options .product-size .product-size_item {
+	flex: 0 0 23%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+}
+
+.product-options .product-size .product-size_item .size-item_text {
+	display: block;
+	flex: 0 0 35%;
+	height: 35px;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.09);
+	border-radius: 5px;
+	background-color: #fff;
+	color: #767676;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 35px;
+	text-transform: uppercase;
+}
+
+.product-options .product-size .product-size_item .size-item_box {
+	flex: 0 0 63%;
+}
+
+.product-options .product-size .product-size_item .size-item_box .size-item_title {
+	color: #c7c7c7;
+	font-size: 11px;
+	font-weight: 500;
+}
+
+.product-options .product-size .product-size_item .size-item_box .size-item_num {
+	color: #13a34d;
+	font-size: 15px;
+	font-weight: 700;
+}
+
+.product-options .product-size .product-size_item:hover .size-item_text {
+	color: #13a34d;
+}
+
+.product-options .product-size .product-size_item:hover .size-item_box .size-item_title {
+	color: #767676;
+}
+
+.product-options .product-size .active .size-item_text {
+	background-color: #13a34d;
+	color: #fff;
+}
+
+.product-options .product-size .active:hover .size-item_text {
+	color: #fff;
+}
+
+.product-options .product-size .active:hover .size-item_box .size-item_title {
+	color: #c7c7c7;
+}
+
+.product-options .btn {
+	flex: 0 0 15%;
+	height: 35px;
+	line-height: 35px;
+}
+
+.product-options .calculator-link {
+	flex: 0 0 18%;
+}
+
+.advantages-product {
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+}
+
+.advantages-product .advantages-product_item {
+	flex: 0 0 24%;
+}
+
+.advantages-product .advantages-product_item span {
+	display: block;
+	width: 65px;
+	height: 65px;
+	background-color: #13a34d;
+	border-radius: 50%;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.09);
+	margin: 0 auto 30px auto;
+	color: #fff;
+	font-size: 32px;
+	font-weight: 900;
+	line-height: 65px;
+}
+
+.advantages-product .advantages-product_item h3 {
+	min-height: 60px;
+	color: #5a5a5a;
+	font-size: 21px;
+	font-weight: 700;
+}
+
+.advantages-product .advantages-product_item a {
+	display: inline-block;
+	color: #13a34d;
+	font-size: 13px;
+	font-weight: 500;
+	margin-top: 22px;
+}
+
+.watch-same {
+	background-color: #f6f7f9;
+	padding: 72px 0;
+}
+
+.watch-same .section-header {
+	text-align: center;
+	margin-bottom: 47px;
+	color: #4a4343;
+}
+
+.watch-same .section-header h2 {
+	font-size: 28px;
+	font-weight: 700;
+}
+
+.watch-same .section-header span {
+	font-size: 22px;
+	font-weight: 500;
+}
+
+.watch-same .watch-same_box {
+	display: flex;
+	justify-content: space-between;
+}
+
+.watch-same .watch-same_box .product-card {
+	flex: 0 0 25%;
+}
+
+.watch-same .btn-product {
+	display: block;
+	width: 160px;
+	height: 35px;
+	line-height: 35px;
+	border-radius: 30px;
+	border: 1px solid #13a34d;
+	font-size: 12px;
+	text-align: center;
+	font-weight: 500;
+	color: #13a34d;
+	margin: 58px auto 0 auto;
+}
+
+.watch-same .btn-product:hover {
 	background-color: #13a34d;
 	color: #fff;
 }
