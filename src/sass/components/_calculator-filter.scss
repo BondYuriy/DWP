@@ -10,9 +10,10 @@
 
       & label {
         width: 100%;
+        font-family: $Roboto;
         color: $section-color;
         font-size: 22px;
-        font-weight: $Regular;
+        font-weight: 400;
         position: relative;
 
         &::before {
@@ -29,7 +30,8 @@
         }
 
         & span {
-          font-weight: $Medium;
+          font-family: $Roboto;
+          font-weight: 700;
         }
 
         & input {

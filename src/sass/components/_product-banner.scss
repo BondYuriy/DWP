@@ -52,6 +52,11 @@
         border-radius: 50%;
         margin-right: 18px;
       }
+
+      & span {
+        font-weight: $light;
+        margin-left: 5px;
+      }
     }
   }
 }

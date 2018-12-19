@@ -63,6 +63,7 @@
     font-weight: $Regular;
 
     & .product-info_title {
+      font-family: $Roboto;
       color: $white-text;
       font-size: 24px;
       font-weight: $Regular;
@@ -192,9 +193,10 @@
 
     & h3 {
       min-height: 60px; //------------------------------
+      font-family: $Roboto;
       color: $title-color;
       font-size: $h3;
-      font-weight: $Medium;
+      font-weight: 700;
     }
 
     & a {
@@ -217,13 +219,15 @@
     color: $section-color;
 
     & h2 {
+      font-family: $Roboto;
       font-size: $h2;
-      font-weight: $Medium;
+      font-weight: 700;
     }
 
     & span {
+      font-family: $Roboto;
       font-size: 22px;
-      font-weight: $Regular;
+      font-weight: 400;
     }
   }
 

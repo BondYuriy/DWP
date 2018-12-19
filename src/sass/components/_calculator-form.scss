@@ -4,9 +4,10 @@
   padding: 20px;
 
   & h4 {
+    font-family: $Roboto;
     color: $green;
     font-size: $h4;
-    font-weight: $Medium;
+    font-weight: 700;
     text-align: center;
     margin-bottom: 30px;
   }
