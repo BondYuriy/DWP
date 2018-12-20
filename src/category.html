@@ -71,27 +71,31 @@
       <main class="main">
         <div class="container">
           <div class="row">
-            <div class="col-7">
+            <div class="col-6 col-lg-7">
               <div class="product-banner">
                 <div class="product-banner_img">
                   <img src="img/Image_4.jpg" alt="product banner" />
                 </div>
                 <div class="product-banner_info">
                   <a href="#"
-                    ><img src="img/play.svg" alt="icon" />Видео презентация<span>«Свойства нашего продукта»</span></a
+                    ><img src="img/play.svg" alt="icon" />Видео презентация<span
+                      >«Свойства нашего продукта»</span
+                    ></a
                   >
                 </div>
               </div>
             </div>
-            <div class="col-5">
-              <div class="category-card">
-                <div class="category-card_img">
-                  <img src="img/cat.png" alt="category card img" />
-                </div>
-                <div class="category-card_info">
-                  <h4>КАТАЛОГ</h4>
-                  <span>ФАСАДНЫХ ПЛИТ</span>
-                  <a class="btn btn-green" href="#">Перейти</a>
+            <div class="col-6 col-lg-5">
+              <div class="category-card_box">
+                <div class="category-card">
+                  <div class="category-card_img">
+                    <img src="img/cat.png" alt="category card img" />
+                  </div>
+                  <div class="category-card_info">
+                    <h4>КАТАЛОГ</h4>
+                    <span>ФАСАДНЫХ ПЛИТ</span>
+                    <a class="btn btn-green" href="#">Перейти</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -112,9 +116,27 @@
                   <div class="input-box">
                     <div class="price">
                       <span class="input-title">Цена</span>
+
                       <div class="range-block">
-                          <input type="range" multiple value="1,10">
+                        <ul id="sliders">
+                          <li id="red">
+                            <span class="label">Red</span>
+                            <span class="range"></span>
+                            <div class="slider"></div>
+                          </li>
+                          <li id="green">
+                            <span class="label">Green</span>
+                            <span class="range"></span>
+                            <div class="slider"></div>
+                          </li>
+                          <li id="blue">
+                            <span class="label">Blue</span>
+                            <span class="range"></span>
+                            <div class="slider"></div>
+                          </li>
+                        </ul>
                       </div>
+
                       <div class="price-filter">
                         <div>56000</div>
                         <span class="price-line"></span>
@@ -1049,7 +1071,9 @@
                     >2019 © DecoWarmingPlates - Изготовление уникальных фасадов.
                     Все права защищены.</span
                   >
-                  <span>Сделано командой<a href="#">Александра Гуковa</a></span>
+                  <span
+                    >Сайт сделан командой<a href="#">Александра Гуковa</a></span
+                  >
                 </div>
               </div>
             </div>

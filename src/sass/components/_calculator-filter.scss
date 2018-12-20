@@ -133,3 +133,22 @@
     }
   }
 }
+
+@media (max-width: 991px) {
+  .calculator-filter .filter-item {
+    & .filter-result_card {
+      padding-top: 310px; //-------------------------------
+      height: 380px; //------------------------------------
+    }
+
+    & .filter-no-result {
+      height: 380px; //------------------------------------
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .calculator-filter .filter-item {
+    flex: 0 0 32%;
+  }
+}

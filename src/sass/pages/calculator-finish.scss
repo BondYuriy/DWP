@@ -94,3 +94,15 @@
     }
   }
 }
+
+@media (max-width: 991px) {
+  .calculator-finish .finish-box .finish-box_info .finish-title {
+    width: 60%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .calculator-finish .finish-box .finish-box_info .finish-title {
+    width: 45%;
+  }
+}

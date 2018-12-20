@@ -16,3 +16,19 @@
     }
   }
 }
+
+@media (max-width: 991px) {
+  .footer-nav {
+    display: flex;
+    text-align: center;
+
+    & li {
+      margin-bottom: 0;
+      margin-right: 30px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

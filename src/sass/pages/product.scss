@@ -173,6 +173,7 @@
   display: flex;
   justify-content: space-between;
   text-align: center;
+  flex-wrap: wrap;
 
   & .advantages-product_item {
     flex: 0 0 24%;
@@ -257,5 +258,80 @@
       background-color: $green;
       color: $white-text;
     }
+  }
+}
+
+@media (max-width: 991px) {
+  .product-wrapper {
+    height: 320px;
+  }
+
+  .product-description {
+    & .product-img_box {
+      & p {
+        font-size: 24px;
+
+        span {
+          font-weight: $Bold;
+          margin: 0 3px;
+        }
+      }
+    }
+
+    & .product-info {
+      padding-top: 30px;
+    }
+  }
+
+  .product-options {
+    justify-content: flex-end;
+
+    & .product-size {
+      flex: 0 0 100%;
+      margin-bottom: 30px;
+    }
+
+    & .btn {
+      flex: 0 0 15%;
+      margin-right: 30px;
+    }
+
+    & .calculator-link {
+      flex: 0 0 34%;
+    }
+  }
+
+  .advantages-product {
+    & .advantages-product_item {
+      flex: 0 0 48%;
+      margin-bottom: 40px;
+
+      &:nth-last-child(-n + 2) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .watch-same {
+    & .watch-same_box {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+
+      & .product-card {
+        flex: 0 0 40%;
+        margin-bottom: 20px;
+
+        &:nth-last-child(-n + 2) {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .product-description .product-img_box {
+    font-size: 35px;
   }
 }

@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 200px;
+  height: 200px; //-------------------------------------
   background-color: $white;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.07);
   border-radius: 15px;
@@ -40,5 +40,11 @@
       height: 30px;
       line-height: 30px;
     }
+  }
+}
+
+@media (max-width: 991px) {
+  .category-card_box .category-card {
+    height: 120px; //-------------------------------------
   }
 }

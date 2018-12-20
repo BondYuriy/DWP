@@ -169,3 +169,14 @@
     }
   }
 }
+
+@media (max-width: 991px) {
+  .tabs
+    .tab-content
+    .tab-pane
+    .calculator-tabs_container
+    .calculator-options_result
+    .result-btn_scale {
+    right: 20px;
+  }
+}

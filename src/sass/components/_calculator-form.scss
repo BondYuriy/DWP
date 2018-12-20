@@ -86,3 +86,13 @@
     }
   }
 }
+
+@media (max-width: 991px) {
+  .total-form form .btn-box {
+    width: 80%;
+
+    & p {
+      flex: 0 0 28%;
+    }
+  }
+}

@@ -6353,6 +6353,7 @@ a:hover {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	flex-wrap: wrap;
 	padding: 21px 0;
 	color: #fff;
 	font-size: 19px;
@@ -6675,7 +6676,7 @@ a:hover {
 }
 
 .advantage .advantage-img-box .item-positions .item-position1 {
-	left: 18px;
+	left: 0;
 	top: 18px;
 }
 
@@ -7893,26 +7894,6 @@ a:hover {
 	opacity: 0.8;
 }
 
-body.sticky-header .header {
-	background-color: rgba(255, 255, 255, 0.8);
-	height: 60px;
-}
-
-body.sticky-header .header,
-body.sticky-header .header-home {
-	height: 70px;
-}
-
-body.sticky-header .header .header-box .navigations .navbar .navbar-collapse .navbar-nav .nav-item .nav-link,
-body.sticky-header .header-home .header-box .navigations .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
-	padding: 16px 20px;
-}
-
-body.sticky-header .header .header-box .logo img,
-body.sticky-header .header-home .header-box .logo img {
-	width: 80%;
-}
-
 .subscription-wrapper {
 	max-height: 100px;
 	background-image: url("../img/bi-home-footer.jpg");
@@ -7941,6 +7922,7 @@ body.sticky-header .header-home .header-box .logo img {
 .footer-box {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 	color: #d8d8d8;
 }
 
@@ -8080,7 +8062,6 @@ body.sticky-header .header-home .header-box .logo img {
 .copyright {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
 	font-size: 14px;
 	font-weight: 500;
 	color: #6f6f6f;
@@ -8141,6 +8122,7 @@ body.sticky-header .header-home .header-box .logo img {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	padding-bottom: 30px;
 }
 
 .product-section .product-section_img {
@@ -8570,10 +8552,6 @@ body.sticky-header .header-home .header-box .logo img {
 	margin-bottom: 12px;
 }
 
-.category-box .category-product .product .product-card:nth-last-child(-n + 3) {
-	margin-bottom: 0;
-}
-
 .category-box .category-product .btn-green_light {
 	display: block;
 	width: 20%;
@@ -8754,6 +8732,7 @@ body.sticky-header .header-home .header-box .logo img {
 	display: flex;
 	justify-content: space-between;
 	text-align: center;
+	flex-wrap: wrap;
 }
 
 .advantages-product .advantages-product_item {
@@ -11254,6 +11233,77 @@ body.sticky-header .header-home .header-box .logo img {
 	text-align: center !important;
 }
 
+body.sticky-header .header {
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+body.sticky-header .header,
+body.sticky-header .header-home {
+	height: 70px;
+}
+
+body.sticky-header .header .header-box .navigations .navbar .navbar-collapse .navbar-nav .nav-item .nav-link,
+body.sticky-header .header-home .header-box .navigations .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+	padding: 16px 20px;
+}
+
+body.sticky-header .header .header-box .logo img,
+body.sticky-header .header-home .header-box .logo img {
+	width: 80%;
+}
+
+.category-product .product .product-card:nth-last-child(-n + 3) {
+	margin-bottom: 0;
+}
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+.subscription label {
+	flex: 0 0 25%;
+}
+
+.calculator-filter .filter-item {
+	flex: 0 0 32%;
+}
+
+.header-box .navigations {
+	flex: 0 0 57%;
+}
+
+.footer-box .info {
+	flex: 0 0 40%;
+}
+
+.footer-box .contacts {
+	flex: 0 0 20%;
+}
+
+.footer-box .contacts .company {
+	flex: 0 0 10%;
+}
+
+.footer-box .contacts .catalog {
+	flex: 0 0 10%;
+}
+
+.calculator-finish .finish-box .finish-box_info .finish-title {
+	width: 45%;
+}
+
+.category-box .category-filter {
+	flex: 0 0 24.5%;
+}
+
+.category-box .category-filter .input-box {
+	padding-left: 20px;
+}
+
+.product-description .product-img_box {
+	font-size: 35px;
+}
+
 }
 
 @media (min-width: 1200px) {
@@ -12030,14 +12080,167 @@ body.sticky-header .header-home .header-box .logo img {
 
 @media (max-width: 991px) {
 
+.subscription {
+	padding: 15px 0;
+	font-size: 19px;
+}
+
+.subscription label {
+	flex: 0 0 100%;
+	text-align: center;
+}
+
+.subscription label span {
+	display: inline-block;
+	margin-right: 15px;
+}
+
+.subscription input {
+	flex: 0 0 30%;
+}
+
+.subscription .btn {
+	flex: 0 0 25%;
+}
+
+.footer-nav {
+	display: flex;
+	text-align: center;
+}
+
+.footer-nav li {
+	margin-bottom: 0;
+	margin-right: 30px;
+}
+
+.footer-nav li:last-child {
+	margin-right: 0;
+}
+
+.category-card_box .category-card {
+	height: 120px;
+}
+
+.advantage {
+	height: 850px;
+}
+
+.advantage .advantage-img-box {
+	display: none;
+}
+
+.advantage .advantage-list ol .advantage-item1 {
+	left: 120px;
+}
+
+.advantage .advantage-list ol .advantage-item2 {
+	left: 120px;
+}
+
+.advantage .advantage-list ol .advantage-item3 {
+	left: 120px;
+}
+
+.advantage .advantage-list ol .advantage-item4 {
+	right: 20px;
+}
+
+.advantage .advantage-list ol .advantage-item5 {
+	right: 20px;
+}
+
+.advantage .advantage-list ol .advantage-item6 {
+	right: 20px;
+}
+
+.tabs .tab-content .tab-pane .calculator-tabs_container .calculator-options_result .result-btn_scale {
+	right: 20px;
+}
+
+.calculator-card {
+	flex-direction: column;
+	height: 300px;
+}
+
+.calculator-card .calculator-card_img {
+	width: 50%;
+	margin-bottom: 10px;
+}
+
+.calculator-card .calculator-card_info h5 {
+	text-align: center;
+}
+
+.calculator-card .calculator-card_info a {
+	width: 100%;
+}
+
+.calculator-filter .filter-item .filter-result_card {
+	padding-top: 310px;
+	height: 380px;
+}
+
+.calculator-filter .filter-item .filter-no-result {
+	height: 380px;
+}
+
+.product-banner {
+	height: 120px;
+}
+
+.product-banner .product-banner_img {
+	border-radius: 15px;
+	height: 120px;
+}
+
+.total-form form .btn-box {
+	width: 80%;
+}
+
+.total-form form .btn-box p {
+	flex: 0 0 28%;
+}
+
+.header-home,
+.header {
+	height: 60px;
+	padding-top: 10px;
+}
+
+.header-home .header-box .navigations .navbar .navbar-collapse .navbar-nav .nav-item,
+.header .header-box .navigations .navbar .navbar-collapse .navbar-nav .nav-item {
+	border: 0;
+}
+
+.header-home .header-box .navigations .navbar .navbar-collapse .navbar-nav .nav-item:hover,
+.header .header-box .navigations .navbar .navbar-collapse .navbar-nav .nav-item:hover {
+	border: 0;
+}
+
+.header-home .header-box .navigations .navbar .navbar-collapse .navbar-nav .nav-item .nav-link,
+.header .header-box .navigations .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+	padding: 20px 20px;
+	color: #403f3f;
+}
+
+.header-home .header-box .navigations .navbar .navbar-collapse .navbar-nav .active,
+.header .header-box .navigations .navbar .navbar-collapse .navbar-nav .active {
+	border: 0;
+}
+
+.header-home .header-box .navigations .navbar .navbar-collapse .navbar-nav .active .nav-link,
+.header .header-box .navigations .navbar .navbar-collapse .navbar-nav .active .nav-link {
+	color: #13a34d;
+	font-size: 21px;
+}
+
 .navbar-toggler {
 	border: 0;
 	padding: 0px 8px;
 	width: 40px;
 	height: 38px;
 	position: absolute;
-	top: -8px;
-	right: 0;
+	right: 25px;
 	outline: none !important;
 	z-index: 25;
 }
@@ -12100,6 +12303,192 @@ body.sticky-header .header-home .header-box .logo img {
 .navbar-collapse .navbar-nav .nav-item .nav-link {
 	padding: 0;
 	color: #13a34d;
+}
+
+body.sticky-header .header {
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-box .info {
+	flex: 0 0 55%;
+}
+
+.footer-box .contacts {
+	flex: 0 0 35%;
+	text-align: center;
+}
+
+.footer-box .contacts span {
+	margin-bottom: 20px;
+}
+
+.footer-box .contacts .btn {
+	width: 80%;
+	margin: 0 auto 20px auto;
+}
+
+.footer-box .company {
+	flex: 0 0 100%;
+	margin: 30px 0;
+}
+
+.footer-box .catalog {
+	flex: 0 0 100%;
+}
+
+.copyright {
+	flex-direction: column;
+}
+
+.copyright span {
+	flex: 0 0 100%;
+}
+
+.main-header {
+	padding-top: 150px;
+}
+
+.home-wrapper {
+	max-height: 560px;
+}
+
+.work-section {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-bottom: 25px;
+}
+
+.work-section:last-child {
+	margin-bottom: 0;
+}
+
+.work-section .work-section_item {
+	flex: 0 0 100%;
+	height: 400px;
+}
+
+.work-section .work-section_item .work-section_img {
+	height: 400px;
+}
+
+.work-section .section-item_container {
+	flex: 0 0 100%;
+	height: 290px;
+	display: flex;
+	justify-content: space-between;
+	margin: 30px 0;
+}
+
+.work-section .section-item_container .work-section_item {
+	flex: 0 0 48%;
+	height: 290px;
+}
+
+.work-section .section-item_container .work-section_item .work-section_img {
+	height: 290px;
+}
+
+.product-section {
+	flex-direction: column;
+}
+
+.main {
+	padding-top: 100px;
+}
+
+.calculator-finish .finish-box .finish-box_info .finish-title {
+	width: 60%;
+}
+
+.category-box .category-filter {
+	flex: 0 0 33%;
+}
+
+.category-box .category-filter .input-box {
+	padding: 17px 10px 15px 15px;
+}
+
+.category-box .category-filter .input-box .price .input-title,
+.category-box .category-filter .input-box .size .input-title,
+.category-box .category-filter .input-box .coating .input-title,
+.category-box .category-filter .input-box .color .input-title {
+	width: 95%;
+}
+
+.category-box .category-product {
+	flex: 0 0 64%;
+}
+
+.category-box .category-product .product .product-card {
+	flex: 0 0 49%;
+}
+
+.category-box .category-product .product .product-card:nth-last-child(-n + 2) {
+	margin-bottom: 0;
+}
+
+.category-box .category-product .btn-green_light {
+	width: 35%;
+}
+
+.product-wrapper {
+	height: 320px;
+}
+
+.product-description .product-img_box p {
+	font-size: 24px;
+}
+
+.product-description .product-img_box p span {
+	font-weight: 900;
+	margin: 0 3px;
+}
+
+.product-description .product-info {
+	padding-top: 30px;
+}
+
+.product-options {
+	justify-content: flex-end;
+}
+
+.product-options .product-size {
+	flex: 0 0 100%;
+	margin-bottom: 30px;
+}
+
+.product-options .btn {
+	flex: 0 0 15%;
+	margin-right: 30px;
+}
+
+.product-options .calculator-link {
+	flex: 0 0 34%;
+}
+
+.advantages-product .advantages-product_item {
+	flex: 0 0 48%;
+	margin-bottom: 40px;
+}
+
+.advantages-product .advantages-product_item:nth-last-child(-n + 2) {
+	margin-bottom: 0;
+}
+
+.watch-same .watch-same_box {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.watch-same .watch-same_box .product-card {
+	flex: 0 0 40%;
+	margin-bottom: 20px;
+}
+
+.watch-same .watch-same_box .product-card:nth-last-child(-n + 2) {
+	margin-bottom: 0;
 }
 
 }
