@@ -61,12 +61,21 @@
   }
 }
 
+@media (max-width: 767px) {
+  .product-banner {
+    height: 150px; //-------------------------
+
+    & .product-banner_img {
+      height: 150px; //---------------------
+    }
+  }
+}
+
 @media (max-width: 991px) {
   .product-banner {
     height: 120px; //-------------------------
 
     & .product-banner_img {
-      border-radius: 15px;
       height: 120px; //---------------------
     }
   }

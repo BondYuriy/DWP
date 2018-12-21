@@ -261,9 +261,36 @@
   }
 }
 
+@media (max-width: 767px) {
+  .product-description {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 160px;
+
+    & .product-img_box {
+      flex: 0 0 50%;
+      margin-bottom: 30px;
+    }
+
+    & .product-info {
+      flex: 0 0 100%;
+      padding-top: 0;
+
+      & .product-info_title {
+        color: $title-color;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .watch-same .watch-same_box .product-card {
+    flex: 0 0 48%;
+  }
+}
+
 @media (max-width: 991px) {
   .product-wrapper {
-    height: 320px;
+    height: 320px; //-----------------------------------
   }
 
   .product-description {

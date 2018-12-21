@@ -75,6 +75,7 @@
 .finish-product {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 
   & .finish-product_item {
     flex: 0 0 32%;
@@ -90,6 +91,48 @@
         font-family: $Roboto;
         font-weight: 700;
         margin-left: 7px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .calculator-finish {
+    & .finish-box {
+      flex-wrap: wrap;
+      justify-content: center;
+
+      & .finish-box_img {
+        flex: 0 0 100%;
+        margin-bottom: 30px;
+      }
+
+      & .finish-box_info {
+        flex: 0 0 100%;
+      }
+    }
+  }
+
+  .finish-product {
+    justify-content: center;
+
+    & .finish-product_item {
+      flex: 0 0 60%;
+      margin-bottom: 30px;
+
+      &:last-child {
+        margin-bottom: 30px;
+      }
+
+      & .calculator-card {
+        height: 340px;
+        text-align: center;
+
+        & .calculator-card_info .btn {
+          display: block;
+          width: 75%;
+          margin: auto;
+        }
       }
     }
   }

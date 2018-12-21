@@ -1,6 +1,7 @@
 .category-box {
   display: flex;
   justify-content: space-between;
+  position: relative;
 
   & .category-filter {
     flex: 0 0 23%;
@@ -122,6 +123,45 @@
       &:hover {
         background-color: $green;
         color: $white;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .category-box {
+    padding-bottom: 120px;
+
+    & .category-filter {
+      flex: 0 0 47%;
+    }
+
+    & .category-product {
+      flex: 0 0 48%;
+
+      & .product {
+        flex-wrap: wrap;
+        justify-content: center;
+
+        & .product-card {
+          flex: 0 0 90%;
+          margin-bottom: 12px;
+        }
+      }
+
+      & .pagination {
+        position: absolute;
+        bottom: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      & .btn-green_light {
+        width: 40%;
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
       }
     }
   }
