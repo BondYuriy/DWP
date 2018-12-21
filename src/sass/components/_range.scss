@@ -26,4 +26,8 @@
   }
 }
 
-//===========================
+@media (max-width: 575px) {
+  .price .price-filter div {
+    flex: 0 0 41%;
+  }
+}

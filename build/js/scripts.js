@@ -37,3 +37,9 @@ $(".navbar-toggler").click(function() {
 });
 
 //===================================================
+
+$(".btn-toggle").click(function() {
+  $(this)
+    .next(".category-filter")
+    .toggleClass("show");
+});
