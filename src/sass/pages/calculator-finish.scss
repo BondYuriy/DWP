@@ -96,6 +96,12 @@
   }
 }
 
+@media (max-width: 575px) {
+  .finish-product .finish-product_item {
+    flex: 0 0 100%;
+  }
+}
+
 @media (max-width: 767px) {
   .calculator-finish {
     & .finish-box {

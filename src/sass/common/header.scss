@@ -108,7 +108,25 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 575px) {
+  .header-box {
+    & .logo {
+      flex: 0 0 55%;
+    }
+
+    .navigations {
+      flex: 0 0 30%;
+
+      & .navbar {
+        flex: 0 0 50%;
+        padding: 1px;
+      }
+
+      & .registration {
+        flex: 0 0 37px;
+      }
+    }
+  }
 }
 
 @media (max-width: 991px) {

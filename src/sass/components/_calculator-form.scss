@@ -87,6 +87,20 @@
   }
 }
 
+@media (max-width: 575px) {
+  .total-form form .btn-box {
+    flex-direction: column;
+  }
+
+  .calculator-filter .filter-item {
+    flex: 0 0 100%;
+
+    & .filter-no-result {
+      height: 330px; //-------------------------------
+    }
+  }
+}
+
 @media (max-width: 767px) {
   .total-form form {
     & .input-group {

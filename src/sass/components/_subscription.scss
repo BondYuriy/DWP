@@ -1,5 +1,5 @@
 .subscription-wrapper {
-  max-height: 100px;
+  max-height: 100px; //-----------------------------
   background-image: url("../img/bi-home-footer.jpg");
   background-repeat: no-repeat;
   position: relative;
@@ -76,9 +76,15 @@
   }
 }
 
+@media (max-width: 575px) {
+  .subscription-wrapper {
+    min-height: 250px; //---------------------------------------
+  }
+}
+
 @media (max-width: 767px) {
   .subscription-wrapper {
-    min-height: 230px;
+    min-height: 230px; //---------------------------------------
     background-size: cover;
   }
 

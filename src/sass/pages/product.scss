@@ -261,6 +261,64 @@
   }
 }
 
+@media (max-width: 575px) {
+  .product-description {
+    text-align: center;
+
+    & .product-img_box {
+      flex: 0 0 80%;
+    }
+  }
+
+  .product-options {
+    & .product-size {
+      flex-wrap: wrap;
+
+      & .product-size_item {
+        flex: 0 0 48%;
+        margin-bottom: 15px;
+
+        &:nth-last-child(-n + 2) {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    & .btn {
+      flex: 0 0 70%;
+      margin: 0 auto 20px auto;
+    }
+
+    & .calculator-link {
+      flex: 0 0 70%;
+      margin: auto;
+    }
+  }
+
+  .advantages-product .advantages-product_item {
+    flex: 0 0 100%;
+    margin-bottom: 20px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .watch-same .watch-same_box {
+    flex-wrap: wrap;
+
+    & .product-card {
+      margin: 0;
+      flex: 0 0 100%;
+      margin-bottom: 20px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
 @media (max-width: 767px) {
   .product-description {
     flex-wrap: wrap;
@@ -285,6 +343,36 @@
 
   .watch-same .watch-same_box .product-card {
     flex: 0 0 48%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+  .advantages-product {
+    & .advantages-product_item {
+      flex: 0 0 48%;
+      margin-bottom: 40px;
+
+      &:nth-last-child(-n + 2) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .watch-same {
+    & .watch-same_box {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+
+      & .product-card {
+        flex: 0 0 40%;
+        margin-bottom: 20px;
+
+        &:nth-last-child(-n + 2) {
+          margin-bottom: 0;
+        }
+      }
+    }
   }
 }
 
@@ -325,34 +413,6 @@
 
     & .calculator-link {
       flex: 0 0 34%;
-    }
-  }
-
-  .advantages-product {
-    & .advantages-product_item {
-      flex: 0 0 48%;
-      margin-bottom: 40px;
-
-      &:nth-last-child(-n + 2) {
-        margin-bottom: 0;
-      }
-    }
-  }
-
-  .watch-same {
-    & .watch-same_box {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-
-      & .product-card {
-        flex: 0 0 40%;
-        margin-bottom: 20px;
-
-        &:nth-last-child(-n + 2) {
-          margin-bottom: 0;
-        }
-      }
     }
   }
 }

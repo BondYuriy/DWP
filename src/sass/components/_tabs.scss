@@ -170,6 +170,36 @@
 }
 
 @media (max-width: 767px) {
+  .tabs nav .nav {
+    margin-bottom: 20px;
+
+    & .nav-item {
+      border-radius: 15px;
+      flex: 0 0 48%;
+    }
+  }
+
+  .tabs .tab-content {
+    padding: 15px;
+
+    .tab-pane {
+      &
+        .calculator-tabs_container
+        .calculator-options_result
+        .result-btn_scale {
+        position: absolute;
+        right: -5px;
+        top: -25px;
+      }
+
+      & .calculator-tabs_container .calculator-options_result form {
+        width: 60%;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
   .tabs .tab-content .tab-pane .calculator-tabs_container {
     flex-direction: column;
 

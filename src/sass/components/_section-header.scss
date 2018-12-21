@@ -69,6 +69,13 @@
   }
 }
 
+@media (max-width: 575px) {
+  .section-header_container .section-header {
+    flex: 0 0 100%;
+    padding: 0 5px;
+  }
+}
+
 @media (max-width: 991px) {
   .section-header_container {
     justify-content: center;

@@ -3,7 +3,7 @@
 }
 
 .home-wrapper {
-  max-height: 736px;
+  max-height: 736px; //----------------------
   background-image: url("../img/bi-home.jpg");
   background-repeat: no-repeat;
   position: relative;
@@ -208,6 +208,66 @@
 }
 
 @media (max-width: 575px) {
+  .main-header {
+    padding-top: 20px;
+  }
+
+  .home-wrapper {
+    max-height: 580px; //----------------------
+  }
+
+  .home-carousel {
+    display: none;
+  }
+
+  .product-section .product-section_info {
+    & .product-section_carousel .section-carousel_info {
+      left: 25%;
+      top: 50%;
+      transform: translate(-20%, -50%);
+    }
+
+    & .product-section_description {
+      flex-direction: column;
+
+      & .btn {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  .work-section {
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    & .work-section_item {
+      margin: 0;
+      height: 200px; //-----------------------------
+      margin-bottom: 20px;
+
+      & .work-section_img {
+        height: 200px; //---------------------------
+      }
+    }
+
+    & .section-item_container {
+      margin: 0;
+      flex: 0 0 100%;
+      height: auto; //-----------------------------
+      flex-direction: column;
+
+      & .work-section_item {
+        margin: 0;
+        flex: 0 0 100%;
+        height: 300px; //----------------------------
+        margin-bottom: 20px;
+
+        & .work-section_img {
+          height: 300px;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 767px) {

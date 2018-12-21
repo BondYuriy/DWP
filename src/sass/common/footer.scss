@@ -158,6 +158,27 @@
   }
 }
 
+@media (max-width: 575px) {
+  .footer-box {
+    & .company {
+      flex: 0 0 45%;
+    }
+
+    & .catalog {
+      flex: 0 0 40%;
+    }
+  }
+
+  .copyright span {
+    text-align: center;
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
 @media (max-width: 767px) {
   .footer-box {
     justify-content: center;
