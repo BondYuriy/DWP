@@ -48,8 +48,8 @@ $(".btn-toggle").click(function() {
 
 $(".polzunok-5").slider({
   min: 0,
-  max: 5000,
-  values: [0, 5000],
+  max: 150000,
+  values: [0, 150000],
   range: true,
   animate: "fast",
   slide: function(event, ui) {

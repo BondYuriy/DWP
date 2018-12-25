@@ -422,3 +422,26 @@
     font-size: 35px;
   }
 }
+
+@media (min-width: 1200px) {
+  .watch-same .watch-same_box {
+    justify-content: flex-start;
+    padding-left: 15px;
+    margin-right: -60px;
+
+    & .product-card {
+      border: 0;
+      border-radius: 15px 0 0 15px;
+      margin-left: -15px;
+      border: 3px solid #f6f7f9;
+
+      &:nth-child(4n) {
+        border-radius: 15px;
+      }
+
+      &:hover {
+        border: 3px solid $footer-color;
+      }
+    }
+  }
+}
