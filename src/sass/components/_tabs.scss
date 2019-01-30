@@ -15,18 +15,22 @@
       color: $product-title-color;
       padding-top: 16px;
 
-      & img {
+      & svg {
         display: block;
         width: 64px;
         height: 64px;
         background-color: $product-text-color;
         margin: 0 auto 6px auto;
+        fill: #c7c7c7;
+        background-color: #f6f7f9;
       }
     }
 
     & .active {
-      & img {
-        background-color: $green;
+      & svg {
+        fill: $green;
+        transition: none;
+        background-color: $white;
       }
     }
   }

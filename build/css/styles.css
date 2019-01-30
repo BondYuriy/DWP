@@ -6948,16 +6948,20 @@ a:hover {
 	padding-top: 16px;
 }
 
-.tabs nav .nav .nav-item img {
+.tabs nav .nav .nav-item svg {
 	display: block;
 	width: 64px;
 	height: 64px;
 	background-color: #c7c7c7;
 	margin: 0 auto 6px auto;
+	fill: #c7c7c7;
+	background-color: #f6f7f9;
 }
 
-.tabs nav .nav .active img {
-	background-color: #13a34d;
+.tabs nav .nav .active svg {
+	fill: #13a34d;
+	transition: none;
+	background-color: #fff;
 }
 
 .tabs .tab-content {
