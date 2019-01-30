@@ -92,11 +92,20 @@
 
         & .options-result_img {
           margin-bottom: 32px;
+          position: relative;
 
           & img {
             display: block;
             width: 100%;
             height: auto;
+          }
+
+          & .home-main-img,
+          .home-edge-img,
+          .home-wall-img {
+            position: absolute;
+            left: 0;
+            top: 0;
           }
         }
 

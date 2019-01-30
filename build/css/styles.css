@@ -7022,12 +7022,21 @@ a:hover {
 
 .tabs .tab-content .tab-pane .calculator-tabs_container .calculator-options_result .options-result_img {
 	margin-bottom: 32px;
+	position: relative;
 }
 
 .tabs .tab-content .tab-pane .calculator-tabs_container .calculator-options_result .options-result_img img {
 	display: block;
 	width: 100%;
 	height: auto;
+}
+
+.tabs .tab-content .tab-pane .calculator-tabs_container .calculator-options_result .options-result_img .home-main-img,
+.tabs .tab-content .tab-pane .calculator-tabs_container .calculator-options_result .options-result_img .home-edge-img,
+.tabs .tab-content .tab-pane .calculator-tabs_container .calculator-options_result .options-result_img .home-wall-img {
+	position: absolute;
+	left: 0;
+	top: 0;
 }
 
 .tabs .tab-content .tab-pane .calculator-tabs_container .calculator-options_result .result-btn_scale {
