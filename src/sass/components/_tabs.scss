@@ -1,6 +1,7 @@
 .tabs {
   font-size: 12px;
   font-weight: $Medium;
+  // transition: -10s;
 
   & nav .nav {
     border: 0;
@@ -14,6 +15,7 @@
       text-align: center;
       color: $product-title-color;
       padding-top: 16px;
+      // transition: -10s;
 
       & svg {
         display: block;
@@ -23,14 +25,37 @@
         margin: 0 auto 6px auto;
         fill: #c7c7c7;
         background-color: #f6f7f9;
+        // transition: -10s;
+
+        // & #home_icon1,
+        // #home_icon2,
+        // #home_icon3 {
+        //   transition: -10s;
+
+        //   & path {
+        //     transition: -10s;
+        //   }
+        // }
       }
     }
 
     & .active {
+      // transition: -10s;
+
       & svg {
         fill: $green;
-        transition: none;
         background-color: $white;
+        // transition: -10s;
+
+        // & #home_icon1,
+        // #home_icon2,
+        // #home_icon3 {
+        //   transition: -10s;
+
+        //   & path {
+        //     transition: -10s;
+        //   }
+        // }
       }
     }
   }
