@@ -1,7 +1,6 @@
 .tabs {
   font-size: 12px;
   font-weight: $Medium;
-  // transition: -10s;
 
   & nav .nav {
     border: 0;
@@ -15,7 +14,6 @@
       text-align: center;
       color: $product-title-color;
       padding-top: 16px;
-      // transition: -10s;
 
       & svg {
         display: block;
@@ -25,37 +23,13 @@
         margin: 0 auto 6px auto;
         fill: #c7c7c7;
         background-color: #f6f7f9;
-        // transition: -10s;
-
-        // & #home_icon1,
-        // #home_icon2,
-        // #home_icon3 {
-        //   transition: -10s;
-
-        //   & path {
-        //     transition: -10s;
-        //   }
-        // }
       }
     }
 
     & .active {
-      // transition: -10s;
-
       & svg {
         fill: $green;
         background-color: $white;
-        // transition: -10s;
-
-        // & #home_icon1,
-        // #home_icon2,
-        // #home_icon3 {
-        //   transition: -10s;
-
-        //   & path {
-        //     transition: -10s;
-        //   }
-        // }
       }
     }
   }
@@ -204,68 +178,5 @@
         }
       }
     }
-  }
-}
-
-@media (max-width: 767px) {
-  .tabs nav .nav {
-    margin-bottom: 20px;
-
-    & .nav-item {
-      border-radius: 15px;
-      flex: 0 0 48%;
-    }
-  }
-
-  .tabs .tab-content {
-    padding: 15px;
-
-    .tab-pane {
-      &
-        .calculator-tabs_container
-        .calculator-options_result
-        .result-btn_scale {
-        position: absolute;
-        right: -5px;
-        top: -25px;
-      }
-
-      & .calculator-tabs_container .calculator-options_result form {
-        width: 60%;
-      }
-    }
-  }
-}
-
-@media (max-width: 767px) {
-  .tabs .tab-content .tab-pane .calculator-tabs_container {
-    flex-direction: column;
-
-    & .calculator-options {
-      margin-bottom: 30px;
-
-      & .option-list {
-        flex: 0 0 100%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-wrap: wrap;
-
-        & .option-item {
-          flex: 0 0 30%;
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 991px) {
-  .tabs
-    .tab-content
-    .tab-pane
-    .calculator-tabs_container
-    .calculator-options_result
-    .result-btn_scale {
-    right: 20px;
   }
 }

@@ -68,31 +68,3 @@
     margin-left: 10px;
   }
 }
-
-@media (max-width: 575px) {
-  .section-header_container .section-header {
-    flex: 0 0 100%;
-    padding: 0 5px;
-  }
-}
-
-@media (max-width: 991px) {
-  .section-header_container {
-    justify-content: center;
-    margin-bottom: 30px;
-
-    & .section-line {
-      display: none;
-    }
-
-    & .section-header {
-      flex: 0 0 100%;
-      padding-bottom: 10px;
-      border-bottom: 1px solid $green;
-    }
-
-    & .section-none {
-      display: none;
-    }
-  }
-}

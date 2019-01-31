@@ -50,25 +50,3 @@
     }
   }
 }
-
-@media (max-width: 991px) {
-  .calculator-card {
-    flex-direction: column;
-    height: 300px; //------------------------------
-
-    & .calculator-card_img {
-      width: 50%;
-      margin-bottom: 10px;
-    }
-
-    .calculator-card_info {
-      & h5 {
-        text-align: center;
-      }
-
-      & a {
-        width: 100%;
-      }
-    }
-  }
-}
